@@ -12,9 +12,11 @@
             <priority>0.8</priority>
         </url>
         @foreach ($data["states"] as $state)
-        <loc>{{url("/")}}/{{$data["county"]}}/{{$state}}</loc>
+        <url>
+            <loc>{{url("/")}}/{{$data["county"]}}/{{$state}}</loc>
             <changefreq>hourly</changefreq>
             <priority>0.8</priority>
+        </url>
         @endforeach
     @endforeach
 </urlset>
