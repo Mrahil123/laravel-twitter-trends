@@ -7,7 +7,7 @@ class County{
         return [
             [
                 "county"=>"india",
-                "states"=>["nagpur","chennai"],
+                "states"=>["delhi" ,"lucknow" ,"Kanpur" ,"Patna" ,"Ranchi","Kolkata" ,"Srinagar","Amritsar","Jaipur","Ahmedabad","Rajkot","Surat","Bhopal","Indore","Thane","Mumbai","Pune","Hyderabad","Bangalore","Chennai"],
             ]
         ];
     }

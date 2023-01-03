@@ -37,7 +37,7 @@ class TrendController extends Controller
 
     // State View
     public function state($county ,$state)
-    {
+    {   
         // Cache::flush();
         if(Cache::has($state)){
             $trends = json_decode(Cache::get($state));
@@ -55,4 +55,10 @@ class TrendController extends Controller
         ]);
     }
     
+    public function sitemap()
+    {   
+        return response()->view('sitemap',[
+            "datas"=>County::getDatas()
+        ])->header('Content-Type', 'text/xml');
+    }
 }

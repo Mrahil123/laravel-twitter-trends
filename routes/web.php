@@ -15,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get("/",[TrendController::class,"index"]);
+Route::get("/sitemap.xml",[TrendController::class,"sitemap"]);
 Route::get("/{county}",[TrendController::class,"county"]);
 Route::get("/{county}/{state}",[TrendController::class,"state"]);

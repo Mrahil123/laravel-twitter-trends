@@ -22,9 +22,4 @@
         </tr>
         @endforeach
     </table>
-    
-    {{-- <div class="w-full bg-gray-200">
-        <h2 class="text-2xl mb-2">{{$county}} States Availible Trending Now</h2>
-        <h3 class="text-1xl py-1">Kerala</h3>
-    </div> --}}
 </x-layout>
